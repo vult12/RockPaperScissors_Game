@@ -1,0 +1,53 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+import random
+print("what do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors")
+you=int(input("What do you chose?\n"))
+print(you)
+if you == 0 :
+    print(rock)
+elif you == 1:
+    print(paper)
+else:
+    print(scissors)
+list = [0, 1, 2]
+computer = random.choice(list)
+print(computer)
+if computer == 0 :
+    print(rock)
+elif computer == 1:
+    print(paper)
+else:
+    print(scissors)
+if you > computer :
+    print("I Win")
+elif you < computer:
+    print("I lose")
+elif you == computer:
+    print(" we =, try again")
+else:
+    print("your typing is wrong, try again")
